@@ -73,12 +73,8 @@ Optional: Open BullMQ dashboard at `http://localhost:3000/admin/queues` to monit
 ├── bun.lock                # Bun lockfile
 ├── docker-compose.yml      # Redis + worker container definitions
 ├── docs/
-│   ├── architecture.md     # System design decisions
-│   ├── changelog.md        # Version history
-│   ├── demo.md             # Demo instructions
 │   ├── kb/                 # Knowledge base markdown files
-│   │   └── api-authentication-401.md
-│   └── PRD.md              # Product requirements document
+│       └── api-authentication-401.md
 ├── knip.json               # Unused code detection config
 ├── Makefile                # Common development commands
 ├── package.json            # Dependencies and scripts
@@ -119,13 +115,6 @@ Optional: Open BullMQ dashboard at `http://localhost:3000/admin/queues` to monit
 │       └── support-ticket.ts # BullMQ worker definition
 └── tsconfig.json         # TypeScript config
 ```
-
-## Repository Links
-
-- Documentation: `/docs/`
-- Architecture decisions: `/docs/architecture.md`
-- Product requirements: `/docs/PRD.md`
-- Demo guide: `/docs/demo.md`
 
 ## License
 
