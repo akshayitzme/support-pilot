@@ -1,0 +1,23 @@
+services:
+  # --- Infrastructure ---
+  redis:
+    image: redis:7-alpine
+    container_name: support-redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - support-net
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:
+
+networks:
+  support-net:
+    driver: bridge

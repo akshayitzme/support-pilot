@@ -1,0 +1,35 @@
+{
+  "name": "support-pilot",
+  "module": "src/index.ts",
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "lint": "bunx biome check",
+    "lint:fix": "bunx biome check --fix",
+    "format": "bunx biome format --fix",
+    "typecheck": "tsc --noEmit",
+    "knip": "knip"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^3.0.43",
+    "@ai-sdk/openai": "^3.0.41",
+    "@bull-board/api": "^6.20.3",
+    "@bull-board/fastify": "^6.20.3",
+    "ai": "^6.0.116",
+    "bullmq": "^5.70.4",
+    "dotenv": "^17.3.1",
+    "fastify": "^5.8.1",
+    "ioredis": "^5.10.0",
+    "node-cron": "^4.2.1",
+    "ollama-ai-provider-v2": "^3.4.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.6",
+    "@types/bun": "latest",
+    "@types/node": "^25.3.5",
+    "knip": "^5.86.0"
+  }
+}

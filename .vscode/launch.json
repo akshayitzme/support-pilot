@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Bun",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "/home/akshay/.bun/bin/bun",
+      "program": "${workspaceFolder}/src/index.ts",
+      "runtimeArgs": ["--hot"],
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "autoAttachChildProcesses": true,
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
